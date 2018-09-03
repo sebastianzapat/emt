@@ -20,6 +20,10 @@
         <servlet-name>Guia</servlet-name>
         <servlet-class>controladores.Guia</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Programados</servlet-name>
+        <servlet-class>controladores.Programados</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>Guia</servlet-name>
         <url-pattern>/guia</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Programados</servlet-name>
+        <url-pattern>/programados</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
