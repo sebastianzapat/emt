@@ -8,6 +8,10 @@
         <servlet-name>Galeria</servlet-name>
         <servlet-class>controladores.Galeria</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Contactenos</servlet-name>
+        <servlet-class>controladores.Contactenos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Galeria</servlet-name>
         <url-pattern>/galeria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Contactenos</servlet-name>
+        <url-pattern>/contactenos</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
