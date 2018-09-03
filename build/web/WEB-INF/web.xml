@@ -30,7 +30,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/index</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Galeria</servlet-name>
