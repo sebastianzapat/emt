@@ -24,6 +24,10 @@
         <servlet-name>Programados</servlet-name>
         <servlet-class>controladores.Programados</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Motivate</servlet-name>
+        <servlet-class>controladores.Motivate</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>Programados</servlet-name>
         <url-pattern>/programados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Motivate</servlet-name>
+        <url-pattern>/motivate</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
