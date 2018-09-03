@@ -1,7 +1,7 @@
 <%-- 
     Document   : galeria
     Created on : 3/09/2018, 08:00:25 AM
-    Author     : Usuario
+    Author     : Sebastian Zapata y Yenifer Restrepo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

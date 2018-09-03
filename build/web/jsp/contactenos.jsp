@@ -1,7 +1,7 @@
 <%-- 
     Document   : contactenos
     Created on : 3/09/2018, 08:12:30 AM
-    Author     : Usuario
+    Author     : Sebastian Zapata y Yenifer Restrepo
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
