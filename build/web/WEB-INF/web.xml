@@ -16,6 +16,10 @@
         <servlet-name>Registro</servlet-name>
         <servlet-class>controladores.Registro</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Guia</servlet-name>
+        <servlet-class>controladores.Guia</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>Registro</servlet-name>
         <url-pattern>/registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Guia</servlet-name>
+        <url-pattern>/guia</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
