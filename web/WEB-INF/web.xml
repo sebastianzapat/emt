@@ -21,20 +21,40 @@
         <servlet-class>controladores.Guia</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Programados</servlet-name>
-        <servlet-class>controladores.Programados</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>Motivate</servlet-name>
         <servlet-class>controladores.Motivate</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductoController</servlet-name>
+        <servlet-class>controladores.ProductoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>plan_viaje</servlet-name>
+        <servlet-class>plan_viaje</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Plan_Viajes</servlet-name>
+        <servlet-class>controladores.Plan_Viajes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Contacto</servlet-name>
+        <servlet-class>modelos.Contacto</servlet-class>
+        <init-param>
+            <param-name>CONTACTO</param-name>
+            <param-value>Value</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>Registros</servlet-name>
+        <servlet-class>modelos.Registros</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
-        <url-pattern>/index</url-pattern>
+        <url-pattern>/inicio</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Galeria</servlet-name>
-        <url-pattern>/galeria</url-pattern>
+        <url-pattern>/Galeria</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Contactenos</servlet-name>
@@ -49,12 +69,24 @@
         <url-pattern>/guia</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Programados</servlet-name>
-        <url-pattern>/programados</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>Motivate</servlet-name>
         <url-pattern>/motivate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductoController</servlet-name>
+        <url-pattern>/ProductoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Plan_Viajes</servlet-name>
+        <url-pattern>/plan_viajes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Contacto</servlet-name>
+        <url-pattern>/Contacto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Registros</servlet-name>
+        <url-pattern>/Registros</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

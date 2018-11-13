@@ -27,27 +27,28 @@
         <div id=subheader>
 
           <div id="logotipo">
-            <p><a href="index.html">Explorando mi tierra</a></p>
+            <p><a href="inicio">Explorando mi tierra</a></p>
           </div>  
 
           <nav>
             <ul>
 
-              <button type="button" class="btn btn-secondary">Inicio</button>
+              <a type="button" class="btn btn-secondary" href="inicio">Inicio</a>
 
-              <a type="button" class="btn btn-secondary" href="blog.html">Galería</a>
+              <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
 
-              <button type="button" class="btn btn-secondary" href="contactenos.html">Contacto</button>
+              <a type="button" class="btn btn-secondary" href="contactenos">Contacto</a>
+              
+              <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
+
 
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Formularios
               </button>  
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="formulario 1.html">Registro del usuario</a>
-                  <a class="dropdown-item" href="formulario 2.html">Sección de guía</a>
-                  <a class="dropdown-item" href="formulario 3.html">Viajes programados</a>
-                  <a class="dropdown-item" href="formulario 4.html">Motívate</a>
+                  <a class="dropdown-item" href="registro">Registro del usuario</a>
+                  <a class="dropdown-item" href="guia">Sección de guía</a>
                 </div>
                 
             </ul>
@@ -82,7 +83,7 @@
           
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Antrior</span>
+            <span class="sr-only">Anterior</span>
           </a>
           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -93,26 +94,26 @@
         <section id="bienvenidos">
           <article>
               <hgroup><h2>Datos interesantes sobre nuestro país:</h2></hgroup>
-              <p>
+       
                 <ul>
                   1.  En Estados Unidos, ninguno de sus Estados tiene salidas a dos océanos. Nosotros contamos con un departamento que sí lo tiene: El Chocó. 
                   <br/>
                   2.  La Guajira podría producir la energía para todo el país GRATIS con aerogeneradores, como se hace en Puerto Bolívar.
                   <br/>
-                  3.  Ni siquiera en en Italia, Suiza, Grecia, Alemania y sus alrededores, hay un río que se acerque aunque sea un poquito al poderoso paisaje que se aprecia en los límites de nuestros departamentos del Amazonas y Caquetá.
+                  3.  Ni siquiera en Italia, Suiza, Grecia, Alemania y sus alrededores, hay un río que se acerque aunque sea un poquito al poderoso paisaje que se aprecia en los límites de nuestros departamentos del Amazonas y Caquetá.
                   <br/>
                   4.  Tenemos todo para construir una gran nación, solo hay que respirar lento y abrir los ojos a nuestro bello país. 
                   <br/>
                   5.  El Archipiélago de San Bernardo consta de 10 islas en el golfo de Morrosquillo en el Caribe colombiano, desde Tolú salen lanchas diariamente hacia sus diversas islas e islotes.
                 </ul>
-              </p> 
+               
           </article>
         </section>
 
         <section id="contenido">
           
           <article>
-            <hgroup><h2>¡Anímate!<h2></hgroup>
+            <hgroup><h2>¡Anímate!</h2></hgroup>
             <p class="fecha">Octubre 2 de 2017</p>
             <img class="thumb" src="http://juanregala.com.co/blog/wp-content/uploads/2016/06/donde-acampar-cerca-de-Bogota.jpg" alt="Ciudad Bonita"/>
             <p>
@@ -121,41 +122,66 @@
           </article>
 
           <article>
-            <hgroup><h2>Desierto de la Tatacoa<h2></hgroup>
+            <hgroup><h2>Desierto de la Tatacoa</h2></hgroup>
             <p class="fecha">Octubre 2 de 2017</p>
-            <img class="thumb" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Rocas_de_R%C3%ADo_y_Relieve_en_el_Desierto_de_La_Tatacoa.jpg/1200px-Rocas_de_R%C3%ADo_y_Relieve_en_el_Desierto_de_La_Tatacoa.jpg" alt="Ciudad Bonita"/>
+            <img class="thumb" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/c4/e2/ec/en-las-noches-es-un-lugar.jpg"/>
             <p>
-              En la ruta alternativa al Desierto de la Tatacoa en Huila, Colombia se encuentran bellos ríos, puentes, túneles de las antiguas vías del tren y muchos paisajes fotográficos. 
-              Se puede ir en moto, bici o en carros altos (no necesariamente 4x4) 
-              En la vía que de Bogotá conduce a Neiva, hay desvío señalizado que indica girar a la izquierda antes de llegar a la capital huilense. También se puede usar una de las aplicaciones Waze o Google maps. 
+            Es la segunda zona árida más extensa de Colombia (después de la Peninsula de La Guajira) es uno de los escenarios naturales más atractivos de Colombia, de tierra de color ocre y gris con pincelazos del verde de los cactus. El Desierto de la Tatacoa tiene dos colores característicos: ocre en el sector del Cuzco y gris en la zona de Los Hoyos. Un dato curioso es que a pesar de que su conquistador, Gonzalo Jiménez de Quesada, lo llamó de esta manera por los notorios rasgos de este territorio, no es justamente un desierto sino un bosque seco tropical. El desierto de la Tatacoa es un lugar privilegiado geográficamente por su ubicación próxima al Ecuador terrestre. Desde allí, se puede:
+            <br/>
+            -Observar las 88 constelaciones.
+            <br/>
+            -Realizar recorridos por los diversos objetos.
+            <br/>
+            -Apreciar fenómenos como lluvias de meteoros.
+            <br/>
+            -Vislumbrar auroras boreales
             </p>
           </article>
 
           <article>
-            <hgroup><h2>Caño cristales<h2></hgroup>
+            <hgroup><h2>Caño cristales</h2></hgroup>
             <p class="fecha">Octubre 2 de 2017</p>
             <img class="thumb" src="http://ecomontana.com.co/images/CanoCristales/Cao-Cristales-2.jpg"/>
             <p>
-              Para los amantes de los paraísos naturales les aconsejo viajar a Caño Cristales, para muchos, el río más hermoso del mundo. Se encuentra ubicado en la Sierra de la Macarena, en el municipio de la Macarena. Este hermoso río se encuentra localizado a 220 km de la ciudad de Villavicencio, donde puedes comprar un boleto de avion hasta el municipio de la Macarena. Se conoce con el nombre de "El río de los 5 colores" o "el arco iris que se derritió" y las tonalidades que obtiene se deben a las algas de color verde, rojo, amarillo, negro y azul, y sus piedras cubiertas de musgo. 
+              Para los amantes de los paraísos naturales les aconsejo viajar a Caño Cristales, para muchos, el río más hermoso del mundo. Se encuentra ubicado en la Sierra de la Macarena, en el municipio de la Macarena. Este hermoso río se encuentra localizado a 220 km de la ciudad de Villavicencio. Se conoce con el nombre de "El río de los 5 colores" o "el arco iris que se derritió" y las tonalidades que obtiene se deben a las algas de color verde, rojo, amarillo, negro y azul, y sus piedras cubiertas de musgo. 
+            </p>
+          </article>
+          
+          <article>
+            <hgroup><h2>Guatapé</h2></hgroup>
+            <p class="fecha">Septiembre 24 de 2018.</p>
+            <img class="thumb" src="http://aventurecolombia.com/sites/default/files/styles/653x433/public/guatape_3_1.jpg?itok=fDI9UqGl"/>
+            <p>
+              Guatapé es uno de los tan hermosos municipios de Colombia, localizado en la subregión Oriente del departamento de Antioquia. Es reconocido internacionalmente por ser un "pueblo de zócalos" y porque en él está la Piedra del Peñol, que mide cerca de 220m de altura y para llegar a su cima debes subir un total de 702 escalones, después de pagar 18.000 COP.
+            </p>
+          </article>
+            
+          <article>
+            <hgroup><h2>Tobia</h2></hgroup>
+            <p class="fecha">Septiembre 24 de 2018.</p>
+            <img class="thumb" src="http://2.bp.blogspot.com/-q7KZsZHSVQw/Vej2yHekN8I/AAAAAAAAABQ/7_TxOJasHDk/s640/Tobia.jpg"/>
+            <p>
+            A solo hora y media de Bogotá, donde el frío se desvanece y un calor suave cubre el cuerpo, donde los ríos ya no están contaminados y las moles de cemento se esconden tras las montañas cubiertas de árboles frondosos y sembrados de caña, hay un escenario para aventurar en interacción con la naturaleza de las siguientes maneras:
+            <br/>
+            -Canopy
+            <br/>
+            -Torrentismo
+            <br/>
+            -Rafting
+            <br/>
+            </p>
+          </article>
+            
+          <article>
+            <hgroup><h2>San Andrés</h2></hgroup>
+            <p class="fecha">Septiembre 24 de 2018.</p>
+            <img class="thumb" src="http://photo620x400.mnstatic.com/481902d4d03765b5f47361f66d2cdb18/isla-de-san-andres.jpg"/>
+            <p>
+              Es la más grande de las islas que forman parte del Archipiélago de San Andrés, Providencia y Santa Catalina, siendo su extensión total de 26 km². Su clima es cálido, oscilando entre los 26 °C y 29 °C. Los vientos ayudan a aliviar el calor y es uno de los sitios más turísticos y emblemáticos del país.
             </p>
           </article>
         </section>
 
-        <aside>
-          <section class="widget">
-            <h3>Guíate visualmente:</h3>
-            <hgroup><h2>Caño cristales:<h2></hgroup>
-              <img src="https://image.jimcdn.com/app/cms/image/transf/none/path/s86064e6f3929dc5f/image/i26f12b7cd2a76e25/version/1498225559/image.jpg" width="200px"/>	
-            <hgroup><h2>Guatapé:<h2></hgroup>
-              <img src="http://aventurecolombia.com/sites/default/files/styles/653x433/public/guatape_3_1.jpg?itok=fDI9UqGl" width="200px"/> 
-            <hgroup><h2>Tobia:<h2></hgroup>
-              <img src="http://2.bp.blogspot.com/-q7KZsZHSVQw/Vej2yHekN8I/AAAAAAAAABQ/7_TxOJasHDk/s640/Tobia.jpg" width="200px"/> 
-            <hgroup><h2>San Andrés:<h2></hgroup>
-              <img src="http://photo620x400.mnstatic.com/481902d4d03765b5f47361f66d2cdb18/isla-de-san-andres.jpg" width="200"/>
-            <hgroup><h2>Ciudad Perdida:<h2></hgroup>
-              <img src="http://1.bp.blogspot.com/-0aZvvsUdCmY/Vej2lALRs3I/AAAAAAAAAAQ/3kMSQlU6kc8/s1600/Ciudad-Perdida.jpg" width="200"/>
-          </section>		
-        </aside>
 
       </section>
 

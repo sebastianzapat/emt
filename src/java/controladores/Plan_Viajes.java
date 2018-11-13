@@ -6,27 +6,17 @@ package controladores;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import modelos.Imagen;
 
 /**
  *
  * @author Usuario
  */
-public class Galeria extends HttpServlet {
+public class Plan_Viajes extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
@@ -40,36 +30,9 @@ public class Galeria extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        RequestDispatcher rd = request.getRequestDispatcher("jsp/galeria.jsp");
-        List<Imagen> imagenes = imagenes();
-        request.setAttribute("imagenes", imagenes);
-        rd.forward(request, response);
+         RequestDispatcher rq = request.getRequestDispatcher("jsp/plan_viajes.jsp");
+         rq.forward(request, response);
     }
-    List<Imagen> imagenes() {
-        List<Imagen> listaImagenes = new ArrayList<Imagen>();
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/ejemplo", "root", "");
-            PreparedStatement ps = conexion.prepareStatement("SELECT * FROM galeria");
-            ResultSet resultados = ps.executeQuery();
-            while(resultados.next()) {
-                String nombre = resultados.getString("nombre");
-                String ruta = resultados.getString("ruta");
-                Imagen i = new Imagen();
-                i.nombre = nombre;
-                i.ruta = ruta;
-                listaImagenes.add(i);
-            }
-            conexion.close();
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ProductoController.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(ProductoController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return listaImagenes;
-    }
-
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP

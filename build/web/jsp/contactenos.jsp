@@ -4,6 +4,7 @@
     Author     : Sebastian Zapata y Yenifer Restrepo
 --%>
 
+<%@page import="modelos.Contacto"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,31 +29,32 @@
         <div id=subheader>
 
           <div id="logotipo">
-            <p><a href="index.html">Explorando mi tierra</a></p>
+            <p><a href="inicio">Explorando mi tierra</a></p>
           </div>  
 
           <nav>
             <ul>
 
-              <button type="button" class="btn btn-secondary" href="index.html">Inicio</button>
+              <a type="button" class="btn btn-secondary" href="inicio">Inicio</a>
 
-              <button type="button" class="btn btn-secondary" href="blog.html">Galería</button>
+              <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
 
-              <button type="button" class="btn btn-secondary" href="contactenos.html">Contacto</button>
+              <a type="button" class="btn btn-secondary" href="contactenos">Contacto</a>
+              
+              <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
+
 
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Formularios
               </button>  
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="formulario 1.html">Registro del usuario</a>
-                    <a class="dropdown-item" href="formulario 2.html">Sección de guía</a>
-                    <a class="dropdown-item" href="formulario 3.html">Viajes programados</a>
-                    <a class="dropdown-item" href="formulario 4.html">Motívate</a>
+                  <a class="dropdown-item" href="registro">Registro del usuario</a>
+                  <a class="dropdown-item" href="guia">Sección de guía</a>
                 </div>
                 
             </ul>
-          </nav> 
+          </nav>
            
         </div>                                     
       </header> 
@@ -65,7 +67,8 @@
                         <div class="row">
                                 <div class="col-4">
                                     <label><b>Su contacto es para:</b></label>
-                                    <select class="form-control col-3">
+                                    <select class="form-control col-3" name="contacto">
+
                                         <option>--</option>
                                         <option>Solicitud de información</option>						
                                         <option>Sugerencias</option>
@@ -76,35 +79,36 @@
                 <div class="row">
                     <div class="col-4">
                         <label><b>Su nombre:</b></label>
-                        <input type="text" class="form-control"/>
+                        <textarea class="form-control" name="contacto" rows="1"></textarea>
+
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-4">
                         <label><b>Apellido:</b></label>
-                        <input type="text" class="form-control"/>
+                        <textarea class="form-control" name="contacto" rows="1"></textarea>
                     </div>
                 </div>        
                 
                 <div class="row">
                     <div class="col-4">
-                        <label><b>País:</b></label>
-                        <input type="text" class="form-control"/>
+                        <label><b>Región:</b></label>
+                        <textarea class="form-control" name="contacto" rows="1"></textarea>
                     </div>
                 </div>
                 
                 <div class="row">
                         <div class="col-4">
                             <label><b>Correo electrónico:</b></label>
-                            <input type="email" class="form-control"/>
+                            <textarea type="email" class="form-control" name="contacto" rows="1"></textarea>
                         </div>
                 </div>
 
                 <div class="row">
                         <div class="col-4">
                             <label><b>Mensaje*:</b></label>
-                            <textarea class="form-control" rows:"3"></textarea>
+                            <textarea class="form-control" name="contacto" rows="4"> </textarea>
                         </div>
                 </div>
 
@@ -120,6 +124,38 @@
                         <button type="reset" class="form-control  btn btn-primary">limpiar</button>
                     </div>
                 </div>
+                
+                <%@page import="java.util.List" %>
+        <%@page import="modelos.Contacto" %>
+        <%
+            List<Contacto> Contacto = (List<Contacto>) request.getAttribute("Contacto");
+            
+        <div class="contenedor">
+            <%
+                for (int i = 0; i < Contacto.size(); i++) {
+                Contacto = Contacto.get(i);%>
+
+             <div class="elemento">
+               
+                <div><%= Contacto.nombre%></div>
+                <br>
+                <div><%= Contacto.apellido%></div>
+                <br>
+                <div><%= Contacto.region%></div>
+                <br>
+                <div><%= Contacto.correo%></div>
+                <br>
+                <div><%= Contacto.mensaje%></div>
+                <br>
+            </div>
+            <%
+            }%>
+        </div>
+
+        
+    </div>
+                
+                
             </div>
         </form>
   </body>
