@@ -24,43 +24,42 @@
 
 </head>
 
-<body>
+
 
 <header>
     <div id=subheader>
         <div id="logotipo">
-        	<p><a href="index.html">Explorando mi tierra</a></p>
+        	<p><a href="inicio">Explorando mi tierra</a></p>
         </div>
                             
         <nav>
-			<ul>
-													
-				<button type="button" class="btn btn-secondary" href="index.html">Inicio</button>
-													
-				<button type="button" class="btn btn-secondary" href="blog.html">Galería</button>
-													
-				<button type="button" class="btn btn-secondary" href="#">Contacto</button>
-													
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Formularios
-				</button>  
-													
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="formulario 1.html">Registro del usuario</a>
-					<a class="dropdown-item" href="formulario 2.html">Sección de guía</a>
-					<a class="dropdown-item" href="formulario 3.html">Viajes programados</a>
-					<a class="dropdown-item" href="formulario 4.html">Motívate</a>
-				</div>
-																					
-			</ul>
-		</nav> 
-                                     
+            <ul>
+
+              <a type="button" class="btn btn-secondary" href="inicio">Inicio</a>
+
+              <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
+
+              <a type="button" class="btn btn-secondary" href="Contactenos">Contacto</a>
+              
+              <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
+
+
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Formularios
+              </button>  
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="registro">Registro del usuario</a>
+                  <a class="dropdown-item" href="Guia">Sección de guía</a>
+                </div>
+                
+            </ul>
+          </nav> 
+    </div>    
 </header>
-
-	<form>
+	<form name="" action="registro" method="POST">
 		<div class="container">
-
-							<h2><b>Registro del usuario</b></h2> 
+					<h2><b>Registro del usuario</b></h2> 
 						
 			<div class="row">
 				<div class="col-4">
@@ -83,13 +82,13 @@
 			<div class="row">
 				<div class="col-4">
 				    <label><b>Documento: </b></label>
-				    <select class="form-control col-3">
-						<option>--</option>
+                                    <select class="form-control col-3" name="documento">
+                                        <option>--</option>
 		    			<option>c.c</option>						
 		    			<option>T.I</option>
 		    			<option>No sabe / No responde</option>
 		    			<option>Otro</option>  
-		    			<input type="number" class="form-control" name="documento"/>  							    	
+		    			<input type="number" class="form-control" name="documentonum"/>  							    	
 				    </select>
 				</div>
 
@@ -97,45 +96,35 @@
 			<div class="row">
 				<div class="col-4">
 			    	<label><b>Dirección:</b></label>
-			    	<input type="text" class="form-control" name="dirección"/>
+			    	<input type="text" class="form-control" name="direccion"/>
 			    </div>
 			</div>
 			<div class="row">
 				<div class="col-4">
 					<label><b>Ciudad:</b></label>
-				    <input type="text" class="form-control" name="barrio"/>
+				    <input type="text" class="form-control" name="ciudad"/>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-4">
 			    	<label><b>Contraseña:</b></label>
-			    	<input type="password" class="form-control" name="contrasena"/>
+			    	<input type="password" class="form-control" name="contra"/>
 			    </div>
-			</div>
-			<div class="row">
-			    <div class="col-4">
-			    	<label><b>Repetir contraseña:</b></label>
-			    	<input type="password" class="form-control" name="contrasena"/>
-			    </div>
-			</div>
+			</div>			
 			<div class="row">
 					<div class="col-4">
 						<label><b>Comentarios:</b></label>
-						<textarea class="form-control" name="entorno2" rows="4"></textarea>
-						
+						<textarea class="form-control" name="comentarios" rows="4"></textarea>						
 					</div>
 				</div>
 			<div class="row">
-				<div class="col-4">
-					<div class="form-check">
-    					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-    					<label class="form-check-label" for="exampleCheck1">Validar</label>
-  					</div>
+				<div class="col-4">					
 			    	<input type="submit" class="form-control btn btn-dark" name="enviar"/><br><br>
 			    	<button type="reset" class="form-control  btn btn-primary">Limpiar</button>
 			    </div>
 			</div>
-		</div>
+                </div>
 	</form>
-</body>
+
+
 </html>

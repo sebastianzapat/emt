@@ -4,6 +4,7 @@
     Author     : Sebastian Zapata y Yenifer Restrepo
 --%>
 
+<%@page import="modelos.Contacto"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,39 +25,45 @@
     </head>
 
     <body>
+        <%@page import="java.util.List" %>        
+        <%@page import="modelos.Contacto" %>
+        <%        
+        List<Contacto> listaContactos = (List<Contacto>)request.getAttribute("contacto");
+        %>
       <header>
         <div id=subheader>
 
           <div id="logotipo">
-            <p><a href="index.html">Explorando mi tierra</a></p>
+            <p><a href="inicio">Explorando mi tierra</a></p>
           </div>  
 
           <nav>
             <ul>
 
-              <button type="button" class="btn btn-secondary" href="index.html">Inicio</button>
+              <a type="button" class="btn btn-secondary" href="inicio">Inicio</a>
 
-              <button type="button" class="btn btn-secondary" href="blog.html">Galería</button>
+              <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
 
-              <button type="button" class="btn btn-secondary" href="contactenos.html">Contacto</button>
+              <a type="button" class="btn btn-secondary" href="Contactenos">Contacto</a>
+              
+              <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
+
 
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Formularios
               </button>  
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="formulario 1.html">Registro del usuario</a>
-                    <a class="dropdown-item" href="formulario 2.html">Sección de guía</a>
-                    <a class="dropdown-item" href="formulario 3.html">Viajes programados</a>
-                    <a class="dropdown-item" href="formulario 4.html">Motívate</a>
+                  <a class="dropdown-item" href="registro">Registro del usuario</a>
+                  <a class="dropdown-item" href="Guia">Sección de guía</a>
                 </div>
                 
             </ul>
-          </nav> 
+          </nav>
            
         </div>                                     
       </header> 
-      <form>
+      <form name="nuevo-contacto" action="Contactenos" method="POST">
             <div class="container">
     
                                 <h2><b>Te ayudamos a encontrarnos</b></h2> 
@@ -65,7 +72,8 @@
                         <div class="row">
                                 <div class="col-4">
                                     <label><b>Su contacto es para:</b></label>
-                                    <select class="form-control col-3">
+                                    <select class="form-control col-3" name="contacto">
+
                                         <option>--</option>
                                         <option>Solicitud de información</option>						
                                         <option>Sugerencias</option>
@@ -76,51 +84,48 @@
                 <div class="row">
                     <div class="col-4">
                         <label><b>Su nombre:</b></label>
-                        <input type="text" class="form-control"/>
+                        <textarea class="form-control" name="nombre" rows="1"></textarea>
+
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-4">
                         <label><b>Apellido:</b></label>
-                        <input type="text" class="form-control"/>
+                        <textarea class="form-control" name="apellido" rows="1"></textarea>
                     </div>
                 </div>        
                 
                 <div class="row">
                     <div class="col-4">
-                        <label><b>País:</b></label>
-                        <input type="text" class="form-control"/>
+                        <label><b>Región:</b></label>
+                        <textarea class="form-control" name="regi" rows="1"></textarea>
                     </div>
                 </div>
                 
                 <div class="row">
                         <div class="col-4">
                             <label><b>Correo electrónico:</b></label>
-                            <input type="email" class="form-control"/>
+                            <textarea type="email" class="form-control" name="correo" rows="1"></textarea>
                         </div>
                 </div>
 
                 <div class="row">
                         <div class="col-4">
                             <label><b>Mensaje*:</b></label>
-                            <textarea class="form-control" rows:"3"></textarea>
+                            <textarea class="form-control" name="mensaje" rows="4"> </textarea>
                         </div>
                 </div>
-
+                                
                 <p>(*): Opcional.</p>
 
                 <div class="row">
-                    <div class="col-4">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Validar</label>
-                          </div>
-                        <input type="submit" class="form-control btn btn-dark" name="enviar"/><br><br>
-                        <button type="reset" class="form-control  btn btn-primary">limpiar</button>
+                    <div class="col-4">                        
+                        <input type="submit" class="form-control btn btn-dark" name="enviar"/><br><br>                        
                     </div>
                 </div>
-            </div>
-        </form>
+                                
+        </div>                                                       
+        </form>      
   </body>
 </html>
