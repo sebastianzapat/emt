@@ -12,5 +12,8 @@ public class Contacto{
     public String region;
     public String correo;
     public String mensaje;
+<<<<<<< HEAD
     public int idcontacto;
+=======
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
 }

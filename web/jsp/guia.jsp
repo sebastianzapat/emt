@@ -45,7 +45,11 @@
 
               <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
 
+<<<<<<< HEAD
               <a type="button" class="btn btn-secondary" href="Contactenos">Contacto</a>
+=======
+              <a type="button" class="btn btn-secondary" href="contactenos">Contacto</a>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
               
               <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
 
@@ -56,7 +60,11 @@
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="registro">Registro del usuario</a>
+<<<<<<< HEAD
                   <a class="dropdown-item" href="#">Sección de guía</a>
+=======
+                  <a class="dropdown-item" href="guia">Sección de guía</a>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                 </div>
                 
             </ul>
@@ -73,7 +81,11 @@
                     <div class="row">
                             <div class="col-4">
                                 <label><b>¿Qué preferencia tienes en cuanto a clima?</b></label>
+<<<<<<< HEAD
 				 <select class="form-control col-6" name="pref">
+=======
+				 <select class="form-control col-6" name="guia">
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                                     <option>--</option>
                                     <option>Tierra caliente</option>						
                                     <option>Tierra fría</option>
@@ -84,7 +96,11 @@
 		    <div class="row">
                             <div class="col-4">
 				    <label><b>¿Urbano o rural?</b></label>
+<<<<<<< HEAD
 				 <select class="form-control col-6" name="urb">
+=======
+				 <select class="form-control col-6" name="guia">
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                                         <option>--</option>
                                         <option>Urbano</option>
                                         <option>Rural</option>							    	
@@ -95,7 +111,11 @@
                         <div class="row">
                             <div class="col-4">
 				    <label><b>¿Qué hacer?</b></label>
+<<<<<<< HEAD
 				 <select class="form-control col-6" name="hacer">
+=======
+				 <select class="form-control col-6" name="guia">
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                                         <option>--</option>
                                         <option>Aventura</option>
                                         <option>Cultura</option>
@@ -108,25 +128,45 @@
                         <div class="row">
                             <div class="col-6">
 				    <label><b>¿Cuál es tu método de viaje preferido?</b></label>
+<<<<<<< HEAD
 				 <select class="form-control col-4" name="metodo">
+=======
+				 <select class="form-control col-4" name="guia">
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                                         <option>--</option>
                                         <option>Avión</option>
                                         <option>Bus</option>
                                         <option>Lancha</option>
                                         <option>No me interesa, solo quiero viajar</option>						    	
 				 </select>
+<<<<<<< HEAD
+=======
+
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                             </div>
                         </div>
             <div class="row">
                     <div class="col-6">
                         <label><b>Por favor, danos una descripción de tu destino deseado</b></label>
+<<<<<<< HEAD
                         <textarea class="form-control" name="descripcion" rows="4"></textarea>
+=======
+                        <textarea class="form-control" name="guia" rows="4"></textarea>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                         
                     </div>
                 </div>
 			<br/>
 			<div class="row">
+<<<<<<< HEAD
 				<div class="col-4">					
+=======
+				<div class="col-4">
+					<div class="form-check">
+    					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    					<label class="form-check-label" for="exampleCheck1">Validar</label>
+  					</div>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
 			    	<input type="submit" class="form-control btn btn-dark" name="enviar"/>
                                <br/>
                                 <br/>

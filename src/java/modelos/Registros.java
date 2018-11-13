@@ -11,6 +11,7 @@ public class Registros{
     public String apellido;
     public String correo;
     public String documento;
+<<<<<<< HEAD
     public String documentonum;
     public String direccion;
     public String ciudad;
@@ -18,4 +19,8 @@ public class Registros{
     public String comentarios;
     public int idregistros;
 
+=======
+    public String direccion;
+    public String ciudad;
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
 }

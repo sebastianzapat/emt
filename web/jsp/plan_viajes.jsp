@@ -37,7 +37,11 @@
 
               <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
 
+<<<<<<< HEAD
               <a type="button" class="btn btn-secondary" href="Contactenos">Contacto</a>
+=======
+              <a type="button" class="btn btn-secondary" href="contactenos">Contacto</a>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
               
               <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
 
@@ -48,7 +52,11 @@
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="registro">Registro del usuario</a>
+<<<<<<< HEAD
                   <a class="dropdown-item" href="Guia">Sección de guía</a>
+=======
+                  <a class="dropdown-item" href="guia">Sección de guía</a>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                 </div>
                 
             </ul>

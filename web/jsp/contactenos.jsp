@@ -44,7 +44,11 @@
 
               <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
 
+<<<<<<< HEAD
               <a type="button" class="btn btn-secondary" href="Contactenos">Contacto</a>
+=======
+              <a type="button" class="btn btn-secondary" href="contactenos">Contacto</a>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
               
               <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
 
@@ -55,7 +59,11 @@
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <a class="dropdown-item" href="registro">Registro del usuario</a>
+<<<<<<< HEAD
                   <a class="dropdown-item" href="Guia">Sección de guía</a>
+=======
+                  <a class="dropdown-item" href="guia">Sección de guía</a>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                 </div>
                 
             </ul>
@@ -84,7 +92,11 @@
                 <div class="row">
                     <div class="col-4">
                         <label><b>Su nombre:</b></label>
+<<<<<<< HEAD
                         <textarea class="form-control" name="nombre" rows="1"></textarea>
+=======
+                        <textarea class="form-control" name="contacto" rows="1"></textarea>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
 
                     </div>
                 </div>
@@ -92,28 +104,44 @@
                 <div class="row">
                     <div class="col-4">
                         <label><b>Apellido:</b></label>
+<<<<<<< HEAD
                         <textarea class="form-control" name="apellido" rows="1"></textarea>
+=======
+                        <textarea class="form-control" name="contacto" rows="1"></textarea>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                     </div>
                 </div>        
                 
                 <div class="row">
                     <div class="col-4">
                         <label><b>Región:</b></label>
+<<<<<<< HEAD
                         <textarea class="form-control" name="regi" rows="1"></textarea>
+=======
+                        <textarea class="form-control" name="contacto" rows="1"></textarea>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                     </div>
                 </div>
                 
                 <div class="row">
                         <div class="col-4">
                             <label><b>Correo electrónico:</b></label>
+<<<<<<< HEAD
                             <textarea type="email" class="form-control" name="correo" rows="1"></textarea>
+=======
+                            <textarea type="email" class="form-control" name="contacto" rows="1"></textarea>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                         </div>
                 </div>
 
                 <div class="row">
                         <div class="col-4">
                             <label><b>Mensaje*:</b></label>
+<<<<<<< HEAD
                             <textarea class="form-control" name="mensaje" rows="4"> </textarea>
+=======
+                            <textarea class="form-control" name="contacto" rows="4"> </textarea>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
                         </div>
                 </div>
                                 
@@ -124,8 +152,45 @@
                         <input type="submit" class="form-control btn btn-dark" name="enviar"/><br><br>                        
                     </div>
                 </div>
+<<<<<<< HEAD
                                 
         </div>                                                       
         </form>      
+=======
+                
+                <%@page import="java.util.List" %>
+        <%@page import="modelos.Contacto" %>
+        <%
+            List<Contacto> Contacto = (List<Contacto>) request.getAttribute("Contacto");
+            
+        <div class="contenedor">
+            <%
+                for (int i = 0; i < Contacto.size(); i++) {
+                Contacto = Contacto.get(i);%>
+
+             <div class="elemento">
+               
+                <div><%= Contacto.nombre%></div>
+                <br>
+                <div><%= Contacto.apellido%></div>
+                <br>
+                <div><%= Contacto.region%></div>
+                <br>
+                <div><%= Contacto.correo%></div>
+                <br>
+                <div><%= Contacto.mensaje%></div>
+                <br>
+            </div>
+            <%
+            }%>
+        </div>
+
+        
+    </div>
+                
+                
+            </div>
+        </form>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
   </body>
 </html>

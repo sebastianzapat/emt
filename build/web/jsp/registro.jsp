@@ -34,6 +34,32 @@
                             
         <nav>
             <ul>
+<<<<<<< HEAD
+=======
+
+              <a type="button" class="btn btn-secondary" href="inicio">Inicio</a>
+
+              <a type="button" class="btn btn-secondary" href="Galeria">Galería</a>
+
+              <a type="button" class="btn btn-secondary" href="contactenos">Contacto</a>
+              
+              <a type="button" class="btn btn-secondary" href="plan_viajes">Plan de Viajes</a>
+
+
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Formularios
+              </button>  
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="registro">Registro del usuario</a>
+                  <a class="dropdown-item" href="guia">Sección de guía</a>
+                </div>
+                
+            </ul>
+          </nav> 
+                                     
+</header>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
 
               <a type="button" class="btn btn-secondary" href="inicio">Inicio</a>
 
@@ -123,7 +149,43 @@
 			    	<button type="reset" class="form-control  btn btn-primary">Limpiar</button>
 			    </div>
 			</div>
+<<<<<<< HEAD
                 </div>
+=======
+                                                        
+                                                 
+                    <%@page import="java.util.List" %>
+        <%@page import="modelos.Contacto" %>
+        <%
+            List<Contacto> Contacto = (List<Contacto>) request.getAttribute("Contacto");
+            
+        <div class="contenedor">
+            <%
+                for (int i = 0; i < Registros.size(); i++) {
+                Registros = Registros.get(i);%>
+
+             <div class="elemento">
+               
+                <div><%= Registros.nombre%></div>
+                <br>
+                <div><%= Registros.apellido%></div>
+                <br>
+                <div><%= Registros.correo%></div>
+                <br>
+                <div><%= Registros.documento%></div>
+                <br>
+                <div><%= Registros.direccion%></div>
+                <br>
+                <div><%= Registros.ciudad%></div>
+                <br>
+            </div>
+            <%
+            }%>
+        </div>                                    
+                                                        
+                                                        
+		</div>
+>>>>>>> dbcdfeb0fba39637c5f0c5b61d36685e1f113c49
 	</form>
 
 
